@@ -127,6 +127,7 @@ public class Face {
 	
 	public static void eyes_KF2() {
 
+		// These eyes are for a cat!
 		System.out.println(" |         |");
 		System.out.println(" | <o> <o> | ");
 
@@ -150,6 +151,7 @@ public class Face {
 	}
 	
 	public static void nose_KF2(){
+		// This nose is for a cat!
 		System.out.println(" |   __    | ");
 		System.out.println(" |   \\/    |");
 		System.out.println(">|         |<");
