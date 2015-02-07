@@ -1,0 +1,215 @@
+
+ * Name: Kelcie Feeney
+ * Course Number: CSC142
+ * Date: 2/6/15
+ * Assignment: Homework 2
+
+Here are the steps of testing the debugged version of Calculator.java.  I made corrections to 11 code bugs and followed the test steps to check everything worked as I expected it to.  I was looking for syntax and logical errors for most of the bugs.  The Eclipse program even found some of these, but I had to look further to find them all.
+
+The test steps are below.
+
+1. Checked selection "H"
+2. Checked selection "Q" (exited, restarted)
+3. Checked selection "Z" (not expected)
+4. Checked selection "U"
+5. Checked operator "+"
+with console "1 + 2"
+with console "1 - -2"
+6. Checked operator "-"
+with console "1 - 2"
+with console "1 - -2"
+7. Checked operator "*"
+with console "-2 * -3"
+8. Checked operator "/"
+with console "-2 / -3"
+with console "-2 / 0"
+with console "-2 / 0.000000000000000001"
+9. Checked operator "^"
+with console "2 ^ -1"
+with console "2 ^ 0.5"
+with console "2 ^ 1/2" (crashed, restarted)
+10. Checked operator "~" (not expected)
+with console "1 ~ 2"
+
+I was happy that most of these results worked as they should for a calculator.  Decimal values were supported as both inputs and outputs, which is a normal feature for calculators.  However, fractions as inputs were not supported.  When I tested this, the program failed and crashed immediately.  This could be further changed to write another function to first check fraction inputs, but this would take more time on the project at work.  One other strange behavior was when trying "2 ^ -1", the program seemed to loop a few times by itself.  This was unusual and I do not understand it.
+
+The test results are below
+----
+
+Enter one these options:
+	H for Help
+	U for using calculator
+	Q for exiting this program
+Your selection: H
+Enter one these options:
+	H for Help
+	U for using calculator
+	Q for exiting this program
+Your selection: Q
+Thank you for using this program
+
+Enter one these options:
+	H for Help
+	U for using calculator
+	Q for exiting this program
+Your selection: Z
+Incorrect entry...try again!
+Enter one these options:
+	H for Help
+	U for using calculator
+	Q for exiting this program
+Your selection: U
+Enter a mathematical expression to evaluate
+Valid operations are: +, -, /, *, ^ for power
+Expression are entered with spaces between the values and operator
+Here is the valid format:
+	<value><space><operator><space><value>
+Your expression: 1 + 2
+1.0 + 2.0 = 3.0
+Enter one these options:
+	H for Help
+	U for using calculator
+	Q for exiting this program
+Your selection: u
+Enter a mathematical expression to evaluate
+Valid operations are: +, -, /, *, ^ for power
+Expression are entered with spaces between the values and operator
+Here is the valid format:
+	<value><space><operator><space><value>
+Your expression: 1 - -2
+1.0 - -2.0 = 3.0
+Enter one these options:
+	H for Help
+	U for using calculator
+	Q for exiting this program
+Your selection: u
+Enter a mathematical expression to evaluate
+Valid operations are: +, -, /, *, ^ for power
+Expression are entered with spaces between the values and operator
+Here is the valid format:
+	<value><space><operator><space><value>
+Your expression: 1 - 2
+1.0 - 2.0 = -1.0
+Enter one these options:
+	H for Help
+	U for using calculator
+	Q for exiting this program
+Your selection: u
+Enter a mathematical expression to evaluate
+Valid operations are: +, -, /, *, ^ for power
+Expression are entered with spaces between the values and operator
+Here is the valid format:
+	<value><space><operator><space><value>
+Your expression: 1 - -2
+1.0 - -2.0 = 3.0
+Enter one these options:
+	H for Help
+	U for using calculator
+	Q for exiting this program
+Your selection: u
+Enter a mathematical expression to evaluate
+Valid operations are: +, -, /, *, ^ for power
+Expression are entered with spaces between the values and operator
+Here is the valid format:
+	<value><space><operator><space><value>
+Your expression: -2 * -3
+-2.0 * -3.0 = 6.0
+Enter one these options:
+	H for Help
+	U for using calculator
+	Q for exiting this program
+Your selection: u
+Enter a mathematical expression to evaluate
+Valid operations are: +, -, /, *, ^ for power
+Expression are entered with spaces between the values and operator
+Here is the valid format:
+	<value><space><operator><space><value>
+Your expression: -2 / -3
+-2.0 / -3.0 = 0.6666666666666666
+Enter one these options:
+	H for Help
+	U for using calculator
+	Q for exiting this program
+Your selection: u
+Enter a mathematical expression to evaluate
+Valid operations are: +, -, /, *, ^ for power
+Expression are entered with spaces between the values and operator
+Here is the valid format:
+	<value><space><operator><space><value>
+Your expression: -2 / 0
+-2.0 / 0.0 = NaN
+Enter one these options:
+	H for Help
+	U for using calculator
+	Q for exiting this program
+Your selection: u
+Enter a mathematical expression to evaluate
+Valid operations are: +, -, /, *, ^ for power
+Expression are entered with spaces between the values and operator
+Here is the valid format:
+	<value><space><operator><space><value>
+Your expression: 2 / 0.000000000000000001
+2.0 / 1.0E-18 = 1.99999999999999974E18
+Enter one these options:
+	H for Help
+	U for using calculator
+	Q for exiting this program
+Your selection: 2 ^ -1
+Incorrect entry...try again!
+Enter one these options:
+	H for Help
+	U for using calculator
+	Q for exiting this program
+Your selection: Incorrect entry...try again!
+Enter one these options:
+	H for Help
+	U for using calculator
+	Q for exiting this program
+Your selection: Incorrect entry...try again!
+Enter one these options:
+	H for Help
+	U for using calculator
+	Q for exiting this program
+Your selection: u
+Enter a mathematical expression to evaluate
+Valid operations are: +, -, /, *, ^ for power
+Expression are entered with spaces between the values and operator
+Here is the valid format:
+	<value><space><operator><space><value>
+Your expression: 2 ^ 0.5
+2.0 ^ 0.5 = 1.4142135623730951
+Enter one these options:
+	H for Help
+	U for using calculator
+	Q for exiting this program
+Your selection: u
+Enter a mathematical expression to evaluate
+Valid operations are: +, -, /, *, ^ for power
+Expression are entered with spaces between the values and operator
+Here is the valid format:
+	<value><space><operator><space><value>
+Your expression: 2 ^ 1/2
+Exception in thread "main" java.util.InputMismatchException
+	at java.util.Scanner.throwFor(Unknown Source)
+	at java.util.Scanner.next(Unknown Source)
+	at java.util.Scanner.nextDouble(Unknown Source)
+	at Calculator.calculateResults(Calculator.java:114)
+	at Calculator.processSelection(Calculator.java:80)
+	at Calculator.main(Calculator.java:63)
+
+Enter one these options:
+	H for Help
+	U for using calculator
+	Q for exiting this program
+Your selection: u
+Enter a mathematical expression to evaluate
+Valid operations are: +, -, /, *, ^ for power
+Expression are entered with spaces between the values and operator
+Here is the valid format:
+	<value><space><operator><space><value>
+Your expression: 1 ~ 2
+Enter one these options:
+	H for Help
+	U for using calculator
+	Q for exiting this program
+Your selection: 
