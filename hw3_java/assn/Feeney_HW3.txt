@@ -1,0 +1,63 @@
+ * Name: Kelcie Feeney
+ * Course Number: CSC142
+ * Date: 2/27/15
+ * Assignment: Homework 3
+
+Here are the steps of testing the birthday game.  They are automatically tested by the program using a Scanner object to simulate the user input on the console.
+
+		String testInputs1 = "Kelcie 2 27 3 28";
+		String testInputs2 = "Kelcie z z 2 27 -1 3 28";
+		String testInputs3 = "Kelcie 3 28 3 28";
+		String testInputs4 = "Kelcie 4 1 3 28";
+
+
+These are in sequence that the program would read them.  They are expected to have the same results, since the program repeats requests if the value is invalid.  The output is shown below.  The first group is with normal input (real user).  The second and third groups are with test inputs (testInputs1-4).
+
+
+This program accepts the month and day of someone's birthday and determines whether the birthday has already occurred this year or not
+TESTING...
+Enter your name: Kelcie
+Enter today's month (1-12): 2
+Enter today's day (1-28): 27
+Enter your birthday month (1-12): 3
+Enter your birthday day (1-31): 28
+Today is February 27
+Your birthday is on March 28
+You haven't celebrated your birthday yet this year.
+
+This program accepts the month and day of someone's birthday and determines whether the birthday has already occurred this year or not
+TESTING...
+Enter your name: Kelcie
+Enter today's month (1-12): Please try again
+Enter today's month (1-12): Please try again
+Enter today's month (1-12): 2
+Enter today's day (1-28): 27
+Enter your birthday month (1-12): -1
+Enter your birthday month (1-12): 3
+Enter your birthday day (1-31): 28
+Today is February 27
+Your birthday is on March 28
+You haven't celebrated your birthday yet this year.
+
+This program accepts the month and day of someone's birthday and determines whether the birthday has already occurred this year or not
+TESTING...
+Enter your name: Kelcie
+Enter today's month (1-12): 3
+Enter today's day (1-31): 28
+Enter your birthday month (1-12): 3
+Enter your birthday day (1-31): 28
+Today is March 28
+Your birthday is on March 28
+Happy birthday Kelcie!
+
+This program accepts the month and day of someone's birthday and determines whether the birthday has already occurred this year or not
+TESTING...
+Enter your name: Kelcie
+Enter today's month (1-12): 4
+Enter today's day (1-30): 1
+Enter your birthday month (1-12): 3
+Enter your birthday day (1-31): 28
+Today is April 1
+Your birthday is on March 28
+You already celebrated your birthday this year.
+
